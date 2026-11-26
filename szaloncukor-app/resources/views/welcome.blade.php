@@ -12,30 +12,30 @@
 
                             <label class="form-label" for="marka">Szaloncukor márkája</label>
                             <input class="form-control" type="text" name="marka" id="marka"
-                                value="{{ 'marka' }}">
+                                value="{{ old('marka') }}">
                             @error('marka')
-                                <span class="text-danger">{{ $message }}</span>
+                                <span class="text-danger">{{ $message }}</span> <br>
                             @enderror
 
                             <label class="form-label mt-3" for="iz">Szaloncukor íze</label>
                             <input class="form-control" type="text" name="iz" id="iz"
-                                value="{{ 'iz' }}">
+                                value="{{ old('iz') }}">
                             @error('iz')
-                                <span class="text-danger">{{ $message }}</span>
+                                <span class="text-danger">{{ $message }}</span> <br>
                             @enderror
 
                             <label class="form-label mt-3" for="suly">Szaloncukor súlya</label>
                             <input class="form-control" type="number" name="suly" id="suly"
-                                placeholder="Minimum 100 g" value="{{ 'suly' }}">
+                                placeholder="Minimum 100 g" value="{{ old('suly') }}">
                             @error('suly')
-                                <span class="text-danger">{{ $message }}</span>
+                                <span class="text-danger">{{ $message }}</span> <br>
                             @enderror
 
                             <label class="form-label mt-3" for="ar">Szaloncukor ára</label>
                             <input class="form-control" type="number" name="ar" id="ar"
-                                placeholder="Minimum 100 Ft" value="{{ 'ar' }}">
+                                placeholder="Minimum 100 Ft" value="{{ old('ar') }}">
                             @error('ar')
-                                <span class="text-danger">{{ $message }}</span>
+                                <span class="text-danger">{{ $message }}</span> <br>
                             @enderror
 
                             <div class="mt-3">
